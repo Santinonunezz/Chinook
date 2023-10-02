@@ -23,7 +23,7 @@ def close_db(e=None):
 def init_db():
     db = get_db()
 
-    with current_app.open_resource('shcema.sql') as f:
+    with current_app.open_resource('BdCanciones.sql') as f:
         db.executescript(f.read().decode('utf8'))
 
 
